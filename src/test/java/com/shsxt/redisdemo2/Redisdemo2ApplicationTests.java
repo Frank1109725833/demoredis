@@ -46,7 +46,6 @@ public class Redisdemo2ApplicationTests {
         objectList.forEach(System.out::println);
         value.set("class1:bgb:person1:01","ymd");
         redisTemplate.delete("3");
-
     }
     @Test
     public void test3 (){
