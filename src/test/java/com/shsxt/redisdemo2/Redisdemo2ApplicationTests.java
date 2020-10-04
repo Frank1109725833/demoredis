@@ -25,6 +25,7 @@ public class Redisdemo2ApplicationTests {
         user.setAge(24);
         valueOperations.set("User",user);
         System.out.println(valueOperations.get("User"));
+
     }
 
     @Test
