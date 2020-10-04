@@ -1,0 +1,22 @@
+spring:
+  redis:
+# Redis\u670D\u52A1\u5668\u5730\u5740
+    host: 192.168.10.100
+# Redis\u670D\u52A1\u5668\u7AEF\u53E3
+    port: 6379
+# Redis\u670D\u52A1\u5668\u7AEF\u53E3
+    password: root
+# Redis\u670D\u52A1\u5668\u7AEF\u53E3
+    database: 0
+# \u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4
+    timeout: 10000ms
+    lettuce:
+        pool:
+# \u6700\u5927\u8FDE\u63A5\u6570\uFF0C\u9ED8\u8BA48
+          max-active: 1024
+# \u6700\u5927\u8FDE\u63A5\u963B\u585E\u7B49\u5F85\u65F6\u95F4\uFF0C\u5355\u4F4D\u6BEB\u79D2\uFF0C\u9ED8\u8BA4-1ms
+          max-wait: 10000ms
+# \u6700\u5927\u7A7A\u95F2\u8FDE\u63A5\uFF0C\u9ED8\u8BA48
+          max-idle: 200
+# \u6700\u5C0F\u7A7A\u95F2\u8FDE\u63A5\uFF0C\u9ED8\u8BA40
+          min-idle: 5
