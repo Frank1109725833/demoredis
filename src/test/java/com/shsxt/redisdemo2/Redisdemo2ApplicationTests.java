@@ -46,6 +46,5 @@ public class Redisdemo2ApplicationTests {
         list.add("4");
         List<Object> objectList = value.multiGet(list);
         objectList.forEach(System.out::println);
-
     }
 }
